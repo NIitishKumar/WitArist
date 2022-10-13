@@ -16,7 +16,7 @@ function Dashboard() {
     try {
       const data = await axios({
         method: "get",
-        url: "http://localhost:5000/vendor",
+        url: "http://witarist.herokuapp.com/vendor",
       }).then((res) => {
         if (res.data.data) {
           setVendors(res.data.data);
@@ -31,7 +31,7 @@ function Dashboard() {
     try {
       const data = await axios({
         method: "get",
-        url: "http://localhost:5000/resource",
+        url: "http://witarist.herokuapp.com/resource",
       }).then((res) => {
         console.log("------------------------", res);
         if (res.data.data) {

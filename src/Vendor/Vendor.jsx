@@ -16,7 +16,7 @@ function Vendor() {
             try {
                 await axios({
                     method:"post",
-                    url:"http://localhost:5000/vendor",
+                    url:"http://witarist.herokuapp.com/vendor",
                     data:{name:values.name}
                 }).then(res => {
                     if(res.status === 200){
