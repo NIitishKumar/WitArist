@@ -43,7 +43,7 @@ function Resource() {
     try {
       const vendor = await axios({
         method: "get",
-        url: "http://witarist.herokuapp.com/vendor",
+        url: "https://witarist.herokuapp.com/vendor",
       }).then((res) => {
         if (res.status === 200) {
           setVendor(res.data?.data);
@@ -58,7 +58,7 @@ function Resource() {
     try {
       const vendor = await axios({
         method: "get",
-        url: `http://witarist.herokuapp.com/vendor?name=${e.target.value}`,
+        url: `https://witarist.herokuapp.com/vendor?name=${e.target.value}`,
       }).then((res) => {
         if (res.status === 200) {
           setVendor(res.data?.data);
@@ -105,7 +105,7 @@ function Resource() {
         form.append('tech',values.tech)
         await axios({
             method:"post",
-            url:"http://witarist.herokuapp.com/resource",
+            url:"https://witarist.herokuapp.com/resource",
             data:form
         }).then(res => {
           // navigate("/")
