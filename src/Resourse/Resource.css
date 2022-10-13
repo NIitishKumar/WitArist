@@ -1,0 +1,153 @@
+.resource{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10%; */
+    background-color: #dff0f5;
+    font-family:sans-serif;
+    /* padding: 5%; */
+    display: flex;
+    align-items: center;
+    padding-bottom: 5%;
+}
+
+.image{
+    height: 400px;
+    width: 100%;
+    margin-top: -5%;
+}
+
+.resource form{
+    display: flex;
+    flex-direction: column;
+    /* width: 70%; */
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+    line-height: 3;
+}
+
+.container {
+    display: block;
+}
+
+h2{
+    margin: 0;
+    padding: 0;
+}
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+.resource div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 10%;
+}
+
+.resourceLabel{
+    font-size: 1.2rem;
+}
+
+.resourceInput{
+    width: 70%;
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
+    boxShadow:none;
+
+}
+
+.resourceButton{
+    margin-top: 5%;
+    width: 30%;
+    border: 0;
+    height: 25px;
+    background-color: #2d7ff9;
+    border-radius: 5px;
+    color: white;
+}   
+
+.addVendor{
+    color: black;
+    font-weight: 600;
+    border: 0;
+}
+
+.checkbox{
+    display:flex;
+    flex-direction: row;
+}
+
+ul{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style:none;
+    cursor: pointer;
+    
+}
+
+
+label,input{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/*  ----------------------> Modal */
+
+.darkBG {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 98;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+  }
+  
+  .modal {
+    width: 700px;
+    height: 550px;
+    background: white;
+    color: white;
+    z-index: 2;
+    /* border-radius: 16px; */
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    position: relative;
+    display: flex;
+    letter-spacing: 0;
+  }
+
+  .search{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: 0;
+    box-shadow: none;
+    height: 40px;
+    padding: 10px;
+  }
+
+  .vendorList{
+    width: 96%;
+    font-size: 1.3rem;
+    margin-top: 8px;
+    border:1px solid black;
+    padding: 8px;
+    border-radius: 10px;
+  }
