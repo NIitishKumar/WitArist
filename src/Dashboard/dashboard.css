@@ -46,3 +46,33 @@ table, td, th {
     height: 100%;
     padding: 0;
   }
+
+
+  @media screen and (max-width:700px) {
+
+    body{
+      text-align: center;
+    }
+
+    .tableContainer{
+      display: inline;
+    }
+
+    .home{
+      position: relative;
+      top: 5%;
+      right: 5%;
+      width: 80%;
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+
+    table{
+      margin-bottom: 10%;
+    }
+
+    h1{
+      font-size: 1.2rem;
+    }
+
+  }
