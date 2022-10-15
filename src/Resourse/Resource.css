@@ -151,3 +151,14 @@ label,input{
     padding: 8px;
     border-radius: 10px;
   }
+
+  @media screen and (max-width:700px) {
+    .resourceInput{
+        width: 100%;
+    }
+
+    .resourceButton{
+        width: 100%;
+        height: 40px;
+    }
+  }
