@@ -118,7 +118,7 @@ function Dashboard() {
                   <tr>
                     <td>{x.name}</td>
                     <td>{x.vendorName}</td>
-                    <td>technology</td>
+                    <td>{x.technology}</td>
                     <td>
                       <a onClick={() => {
                         setOpen(true)
